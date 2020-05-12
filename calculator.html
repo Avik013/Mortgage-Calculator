@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="flex_wrapper">
+    <div class="calculator_content">
+      <div class="calculator_content_title">
+        <h1 class="first_text">Հիփոթեքային Հաշվիչ</h1>
+      </div>
+      <div class="colculator_content_body">
+
+        <div class="coloulator_content_body_top">
+          <div class="colculator_content_body_top_imputs">
+            <div class="input_wrapper">
+              <div class="title_of_input">Հիփոթեքի Գումար</div>
+              <div class="input">
+                <input type="number" id="total_cost" value="0">
+              </div>
+              <div class="input">
+                <input type="range" min="0" max="80000000" id="total_cost_range" value="0" step="500000" class="input_range">
+              </div>              
+            </div>
+            <div class="input_wrapper">
+              <div class="title_of_input">Կանխավճար</div>
+              <div class="input">
+                <input type="number" id="an_initial_fee" value="0">
+              </div>
+              <div class="input">
+                <input type="range" min="100000" max="80000000" id="an_initial_fee_range" value="0" step="100000" class="input_range">
+              </div>
+            </div>
+            <div class="input_wrapper">
+              <div class="title_of_input">Ժամկետ (ամիս)</div>
+              <div class="input">
+                <input type="number" id="credit_term" value="0">
+              </div>
+              <div class="input">
+                <input type="range" min="1" max="30" id="credit_term_reng" value="0" class="input_range">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="colculator_content_body_middle">
+          <div class="colculator_content_title_middle">
+          <h2>Ընտրեք Ձեր Բանկը</h2>
+          </div>
+          <div class="colculator_content_body_middle_btns">
+            <button data-name="inecobank" class="bank active">
+              <div class="text">Inecobank</div>
+              <div class="value">9.8 %</div>
+            </button>
+            <button data-name="vtbbank" class="bank">
+              <div class="text">Vtb bank</div>
+              <div class="value">7.9 %</div>
+            </button>
+            <button data-name="conversbank" class="bank">
+              <div class="text">Conversbank</div>
+              <div class="value">7,5 %</div>
+            </button>
+            <button data-name="ardshinbank" class="bank">
+              <div class="text">Ardshinbank</div>
+              <div class="value">9,2 %</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="calculator_content_body_bottom">
+          <div class="final_results_wrapper">
+            <div class="final_results_item">
+              <div class="title">Վարկի Գումար</div>
+              <div class="value" id="amount_of_credit"> 0 <span>֏</span></div>
+            </div>
+            <div class="final_results_item">
+              <div class="title">Ամսական Մարում</div>
+              <div class="value" id="monthly_payment"> 0 <span>֏</span></div>
+            </div>
+            <div class="final_results_item">
+              <div class="title">Ցանկալի Ամսական Շահույթ</div>
+              <div class="value" id="recommended_income"> 0 <span>֏</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<script src="./calculator.js"></script>
+</body>
+</html>
